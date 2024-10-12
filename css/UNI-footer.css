@@ -1,0 +1,212 @@
+@charset "UTF-8";
+.m-show {
+    display: none;
+}
+
+.UNI-footer * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+.UNI-footer img {
+    display: inline-block;
+}
+
+.UNI-footer {
+    font-family: "PingFangTC-Regular", "Heiti TC", "Noto Sans TC", "Microsoft JhengHei", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.UNI-footer.bfgame .gradeArea{display: none;}
+
+.UNI-footer.hasBF {
+    /* margin-bottom: 35px; */
+    padding-bottom: 35px;
+    border-top: 3px solid #FF8300
+}
+
+.UNI-footer.dark {
+    background-color: #000 ;
+    color: #FFF !important;
+}
+
+.UNI-footer.dark p,
+.UNI-footer.dark li {
+    color: #FFF !important;
+}
+
+.UNI-footer.light p,
+.UNI-footer.light li {
+    color: #000 !important;
+}
+
+.UNI-footer.light {
+    background-color: #FFF ;
+    color: #000 !important;
+}
+
+.UNI-footer.dark .inner-wrap {
+    background-color: #000;
+}
+
+.UNI-footer.light .inner-wrap {
+    background-color: #FFF;
+}
+
+.UNI-footer .inner-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 1024px; */
+    padding: 10px 0;
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: left;
+}
+
+.UNI-footer .logoArea,
+.UNI-footer .gradeArea {
+    white-space: nowrap;
+}
+
+/* .UNI-footer .logoArea:before {
+    content: "";
+    display: inline-block;
+    height: 34px;
+    width: 40px;
+    margin-right: 10px;
+    background: url('https://tw.hicdn.beanfun.com/beanfun/GamaWWW/allProducts/images/footer/logos/logo-gama.png') left top no-repeat;
+} */
+
+.UNI-footer .logoArea__link {
+    display: inline-block;
+    margin: 0 5px;
+    cursor: default;
+}
+
+.UNI-footer .logoArea__link img {
+    height: 34px;
+    width: auto;
+}
+
+.UNI-footer .gradeArea .gradeArea__img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.UNI-footer .gradeArea .gradeArea__img img {
+    height: 45px;
+}
+
+.UNI-footer .gradeArea .gradeArea__list {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0 0 0 5px;
+    list-style: none;
+    max-width: 330px;
+}
+
+.UNI-footer .gradeArea .gradeArea__list li {
+    /* font-size: 10px; */
+    width: calc(100% * (12 / 10));
+    transform: scale( 0.83);
+    transform-origin: 0%;
+    line-height: 1.5em;
+}
+
+.UNI-footer .gradeArea .gradeArea__list li:before {
+    content: "■ ";
+    position: relative;
+    top: -1px;
+}
+
+.UNI-footer .copyrightArea {
+    max-width: 340px;
+    padding: 0 15px;
+}
+
+.UNI-footer .copyrightArea p {
+    margin: 0;
+    /* font-size:10px */
+    width: calc(100% * (12 / 10));
+    transform: scale( 0.83);
+    transform-origin: 0%;
+    line-height: 1.5em;
+}
+
+/*-----------壹版到底 Hack-----------*/
+
+.UNI-footer.vp .copyrightArea {
+    max-width: 600px;
+}
+
+.UNI-footer.vp .copyrightArea p,
+.UNI-footer.viewport .gradeArea .gradeArea__list li {
+    font-size: 20px;
+    width: inherit;
+    transform: inherit;
+}
+
+.UNI-footer.vp .gradeArea .gradeArea__img img {
+    height: 80px;
+}
+
+/*-----------壹版到底 Hack end-----------*/
+
+/*-----------IE Hack-----------*/
+
+/*IE8+9*/
+
+.UNI-footer.ieLet10 .inner-wrap {
+    display: table;
+}
+
+.UNI-footer.ieLet10 .logoArea,
+.UNI-footer.ieLet10 .gradeArea,
+.UNI-footer.ieLet10 .copyrightArea {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*IE8*/
+
+.UNI-footer.ie8 .copyrightArea p,
+.UNI-footer.ie8 .gradeArea .gradeArea__list li {
+    font-size: 10px;
+}
+
+/*-----------IE Hack end-----------*/
+
+@media screen and (max-width:1024px) {
+    .UNI-footer .inner-wrap {
+        width: 100%;
+        padding:15px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .m-hide {
+        display: none;
+    }
+    .m-show {
+        display: block;
+    }
+    .UNI-footer .logoArea,
+    .UNI-footer .groupLogoArea,
+    .UNI-footer .gradeArea .gradeArea__list {
+        display: none;
+    }
+    .UNI-footer .copyrightArea {
+        min-width: auto;
+        padding: 0 20px 0 0;
+    }
+
+    .UNI-footer.bfgame .copyrightArea{
+        padding: 0;
+    }
+}
